@@ -22,27 +22,61 @@ nav ul li{
     font-size: 2rem;
     background-color: #000000;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     border-radius: 24px;
     padding: 10px;
     margin: 0 10px;
 }
 nav ul li:hover{
-    background-color: #F3FF35;
+    background-color: #6fff00;
     transition: 0.5s;
     cursor: pointer;
-    
+    color: #000000;
 }
 nav ul li a{
     text-decoration: none;
     color: #ffffff;
 }
-nav ul li a:hover{
-    color: #000000;
-}
 h3 {
     font-size: 2.5rem;
 }
-section {
-    display: inline-flex;
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: 2px solid #fff;
+    text-align: center;
+}
+hr:after {
+    position: relative;
+    top: -1.5rem;
+    font-size: 2.5rem;
+    padding: 0 0.25rem;
+    background: #202869;
+}
+hr.omnie:after {
+    content: "O mnie";
+}
+hr.projekty:after {
+    content: "Projekty";
+}
+hr.umiejetnosci:after {
+    content: "Umiejętności";
+}
+hr.kontakt:after {
+    content: "Kontakt";
+}
+p {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 4rem;
+    text-align: justify;
+    font-size: 2rem;
+}
+section ul {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 4rem;
+    text-align: justify;
+    font-size: 2rem;
 }
