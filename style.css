@@ -1,9 +1,11 @@
 html {
     background-color: #202869;
     color: #ffffff;
+    font-size: 16px;
+    scroll-padding-top: 14px;
 }
 body {
-    width: 900px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat', sans-serif;
@@ -14,40 +16,51 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0 0 0 5px;
+}
+ul {
+    margin: 0;
 }
 nav {
     display: inline-flex;
-    font-family: 'Ubuntu', sans-serif;
+}
+nav img {
+    width: 144px;
+    height: 144px;
+    padding: 0 0 0 4px;
 }
 nav ul {
-    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+nav ul a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 5px;
 }
 nav ul li{
-    flex-grow: 4;
+    list-style-type: none;
     font-size: 2rem;
     background-color: #000000;
     color: #ffffff;
     border: 2px solid #fff;
     border-radius: 24px;
     padding: 9px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 nav ul li:hover{
     background-color: #6fff00;
-    transition: 0.5s;
+    transition: 0.1s;
     cursor: pointer;
     color: #000000;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
+
 h3 {
     font-size: 2.5rem;
 }
 hr {
+    margin-top: 20px;
     font-family: 'Ubuntu', sans-serif;
     overflow: visible; /* For IE */
     padding: 0;
@@ -76,23 +89,56 @@ hr.kontakt:after {
 }
 p, section ul {
     margin-top: 0;
-    padding-top: 0;
     margin-bottom: 4rem;
     text-align: justify;
     font-size: 2rem;
+    padding: 0 10px;
 }
-#umiejetnosci {
+section ul li {
+    margin-left: 20px;
+}
+.umiejetnosci-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .togather {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items:center;
-    width:100%;
+    padding: 0 10px;
+    width: 197px;
+    max-width: 100%;
+    height: auto;
 }
-#kontakt {
+.togather p {
+    padding: 5 0 0 0px;
+}
+.kontakt-container {
     display: flex;
     justify-content: center;
+}
+footer {
+    float: right;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 8px
+    }
+    nav img {
+        width: 25%;
+        height: 25%;
+    }
+    nav {
+        display: inline-flex;
+        align-items: center;
+    }
 }
