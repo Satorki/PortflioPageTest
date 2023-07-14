@@ -123,9 +123,6 @@ footer {
     justify-content: right;
     padding: 10px 10px 0;
 }
-.strzalka {
-    visibility: hidden;
-}
 
 @media only screen and (max-width: 768px) {
     html {
@@ -148,6 +145,9 @@ footer {
         width: 25%;
         height: auto;
     }
+    .togather {
+        width: 150px;
+    }
     .togather img {
         width: 70%;
         height: auto;
@@ -156,13 +156,12 @@ footer {
         position: fixed;
         bottom: 30px;
         right: 10px;
-        visibility: visible;
         font-size: 4rem;
     }
     #strzalka-klik {
         color: rgb(255, 255, 255, 60%);;
-        border: 2px solid rgb(255, 255, 255, 40%);
-        border-radius: 30px;
+        border: 1px solid rgb(255, 255, 255, 40%);
+        border-radius: 40px;
         padding: 0 10px;
     }
 }
